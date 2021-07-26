@@ -32,3 +32,4 @@ if __name__=='__main__':
     print(_GET_.NAME()) # print your name in facebook
     print(_GET_.ID()) # print your id in facebook
     print(_GET_.LINK()) # print your link in facebook
+    print(_GET_.ACCESS_TOEKN()) # print your ACCESS_TOKEN in facebook
