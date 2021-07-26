@@ -12,6 +12,7 @@ class __GET_INFOMATION__():
         user_account=requests.get('https://graph.facebook.com/me?access_token='+access_token).text
         
         self.data=json.loads(user_account) # get file use json
+        self.access_token=access_token
     
     def NAME(self):
         return self.data['name'] # get your name facebook
@@ -19,6 +20,8 @@ class __GET_INFOMATION__():
         return self.data['id'] # get your id facebook
     def LINK(self):
         return self.data['link'] # get your link facebook
+    def ACCESS_TOKEN(self):
+        return self.access_token
 
 #*********************************************************************************#
 
